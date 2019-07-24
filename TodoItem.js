@@ -1,0 +1,18 @@
+import React from "react";
+import {Text, TouchableOpacity} from 'react-native';
+import {styles} from "./App";
+
+
+export class TodoItem extends React.Component {
+    render() {
+        return <TouchableOpacity onPress={() => this.props.toggle(this.props)}>
+            <Text style={this.getClassName()}>
+                {this.props.text}
+            </Text>
+        </TouchableOpacity>;
+    }
+
+    getClassName() {
+        return this.props.isChecked ? styles.checked : styles.unchecked;
+    }
+}
