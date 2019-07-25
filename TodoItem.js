@@ -1,6 +1,6 @@
 import React from "react";
 import {Text, TouchableOpacity} from 'react-native';
-import {styles} from "./App";
+import {styles} from "./styles";
 
 
 export class TodoItem extends React.Component {

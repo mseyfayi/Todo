@@ -1,6 +1,6 @@
 import React from "react";
 import {Text, TextInput, TouchableOpacity, View} from 'react-native';
-import {styles} from "./App";
+import {styles} from "./styles";
 
 
 export class Form extends React.Component {

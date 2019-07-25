@@ -2,7 +2,7 @@ import React from "react";
 import {TodoList} from "./TodoList";
 import {Footer} from "./Footer";
 import {Form} from "./Form";
-import {styles} from "./App";
+import {styles} from "./styles";
 import {AnimatedView} from "./AnimatedView";
 
 export class TodoApp extends React.Component {

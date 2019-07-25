@@ -1,7 +1,7 @@
 import React from 'react'
 import {TodoItem} from "./TodoItem";
 import {FlatList, View} from 'react-native';
-import {styles} from "./App";
+import {styles} from "./styles";
 
 export class TodoList extends React.Component {
     constructor(props) {

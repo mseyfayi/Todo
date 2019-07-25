@@ -1,7 +1,7 @@
 import React from "react";
 import {FooterButton} from "./FooterButton";
 import {View} from 'react-native';
-import {styles} from "./App";
+import {styles} from "./styles";
 
 export class Footer extends React.Component {
 
