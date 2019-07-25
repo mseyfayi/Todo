@@ -20,34 +20,32 @@ export const styles = StyleSheet.create({
 
     checked: {
         textDecorationLine: 'line-through',
-        fontSize: 20,
     },
 
-    unchecked: {
-        fontSize: 20
+    item:{
+        fontSize: 20,
+        alignSelf:'center'
     },
 
     active: {
         backgroundColor: 'blue',
-        height: 40,
-        width: 60,
-        alignItems: 'center',
-        justifyContent: 'center',
-        margin:5,
     },
 
     disactive: {
         backgroundColor: 'skyblue',
+    },
+
+    buttonText:{
+        color: 'white',
+        fontSize: 15,
+    },
+
+    footerButton:{
         height: 40,
         width: 60,
         alignItems: 'center',
         justifyContent: 'center',
         margin:5,
-
-    },
-
-    footerButton:{
-
     },
 
     footer: {
@@ -57,7 +55,12 @@ export const styles = StyleSheet.create({
     },
 
     list: {
-        flex: 5
+        flex: 5,
+        padding: 10,
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
+        alignSelf: 'center',
     },
 
     form: {
@@ -70,7 +73,7 @@ export const styles = StyleSheet.create({
         margin: 5,
         width: 70,
         height:50,
-        backgroundColor: 'grey',
+        backgroundColor: 'skyblue',
         alignItems: 'center',
         justifyContent: 'center',
         borderRadius: 10,

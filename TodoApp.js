@@ -33,7 +33,11 @@ export class TodoApp extends React.Component {
     }
 
     classNameFooter(inputStatus) {
-        return this.state.status === inputStatus ? styles.active : styles.disactive;
+        const activityStyle=this.state.status === inputStatus ? styles.active : styles.disactive;
+        return {
+            ...activityStyle,
+            ...styles.footerButton,
+        };
     }
 
     handleChange(text) {

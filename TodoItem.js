@@ -13,6 +13,10 @@ export class TodoItem extends React.Component {
     }
 
     getClassName() {
-        return this.props.isChecked ? styles.checked : styles.unchecked;
+        const check=this.props.isChecked ? styles.checked : {};
+        return {
+            ...check,
+            ...styles.item,
+        };
     }
 }

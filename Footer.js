@@ -5,20 +5,16 @@ import {styles} from "./App";
 
 export class Footer extends React.Component {
 
+    _renderButton(text) {
+        return <FooterButton text={text} click={e => this.props.clickFooter(text)}
+                             className={this.props.classNameFooter(text)}/>
+    }
+
     render() {
-        const all = 'All';
-        const todo = 'Todo';
-        const done = 'Done';
-
         return <View style={styles.footer}>
-            <FooterButton text={all} click={e => this.props.clickFooter(all)}
-                          className={this.props.classNameFooter(all)}/>
-
-            <FooterButton text={todo} click={e => this.props.clickFooter(todo)}
-                          className={this.props.classNameFooter(todo)}/>
-
-            <FooterButton text={done} click={e => this.props.clickFooter(done)}
-                          className={this.props.classNameFooter(done)}/>
+            {this._renderButton("All")}
+            {this._renderButton("Todo")}
+            {this._renderButton("Done")}
         </View>
     }
 }

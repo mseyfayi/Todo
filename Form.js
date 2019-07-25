@@ -12,7 +12,7 @@ export class Form extends React.Component {
                 onChangeText={this.props.handleChange}
                 value={this.props.text}/>
             <TouchableOpacity onPress={this.props.handleSubmit} style={styles.button}>
-                <Text>submit</Text>
+                <Text style={styles.buttonText}>submit</Text>
             </TouchableOpacity>
         </View>
     }
