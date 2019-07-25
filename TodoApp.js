@@ -2,9 +2,8 @@ import React from "react";
 import {TodoList} from "./TodoList";
 import {Footer} from "./Footer";
 import {Form} from "./Form";
-import {View} from 'react-native';
 import {styles} from "./App";
-
+import {AnimatedView} from "./AnimatedView";
 
 export class TodoApp extends React.Component {
     constructor(props) {
@@ -22,11 +21,11 @@ export class TodoApp extends React.Component {
     }
 
     render() {
-        return <View style={styles.container}>
+        return <AnimatedView style={styles.container}>
             <Form text={this.state.text} handleChange={this.handleChange} handleSubmit={this.handleSubmit}/>
             <TodoList items={this.state.items} status={this.state.status}/>
             <Footer clickFooter={this.clickFooter} classNameFooter={this.classNameFooter}/>
-        </View>;
+        </AnimatedView>;
     }
 
     clickFooter(inputStatus) {

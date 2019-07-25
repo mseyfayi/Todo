@@ -46,6 +46,10 @@ export const styles = StyleSheet.create({
 
     },
 
+    footerButton:{
+
+    },
+
     footer: {
         flex: 1,
         flexDirection: 'row',
@@ -69,7 +73,7 @@ export const styles = StyleSheet.create({
         backgroundColor: 'grey',
         alignItems: 'center',
         justifyContent: 'center',
-        borderRadius: 4,
+        borderRadius: 10,
     },
 
     input: {
@@ -78,5 +82,6 @@ export const styles = StyleSheet.create({
         height:50,
         borderColor: 'grey',
         borderWidth: 1,
+        borderRadius: 10,
     },
 });
